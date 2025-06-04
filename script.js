@@ -14,4 +14,15 @@ function flip() {
         question.style.display="flex";
         answer.style.display="none";
     }
+
+    //toggle
+
+    // question.classList.add("show");
+    // answer.classList.add("hide");
+
+    // question.classList.toggle("hide");
+    // question.classList.toggle("show");
+
+    // answer.classList.toggle("show");
+    // answer.classList.toggle("hide");
 }
