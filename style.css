@@ -33,7 +33,7 @@ body, html {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 400px;
+    width: 500px;
     height: 30px;
     border: 1px solid;
 }
@@ -42,7 +42,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 500px;
     height: 200px;
     border: 1px solid;
 }
@@ -52,7 +52,7 @@ body, html {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 400px;
+    width: 500px;
     height: 30px;
     border: 1px solid;
 }
