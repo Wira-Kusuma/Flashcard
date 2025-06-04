@@ -70,7 +70,16 @@ p {
     justify-content: center;
 }
 
-#answer {display: none;}
+#answer1 {display: none;}
+#answer2 {display: none;}
+#answer3 {display: none;}
+#answer4 {display: none;}
+#answer5 {display: none;}
+#answer6 {display: none;}
+#answer7 {display: none;}
+#answer8 {display: none;}
+#answer9 {display: none;}
+#answer10 {display: none;}
 
 .show {display: flex;}
 .hide {display: none;}
@@ -85,3 +94,10 @@ p {
 #card8 {display: none;}
 #card9 {display: none;}
 #card10 {display: none;}
+
+.card1 {
+  display: none;
+}
+.card1.active {
+  display: flex;
+}

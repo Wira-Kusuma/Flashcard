@@ -1,5 +1,33 @@
-let answer = document.getElementById("answer");
-let question = document.getElementById("question");
+let answer1 = document.getElementById("answer1");
+let question1 = document.getElementById("question1");
+
+let answer2 = document.getElementById("answer2");
+let question2 = document.getElementById("question2");
+
+let answer3 = document.getElementById("answer3");
+let question3 = document.getElementById("question3");
+
+let answer4 = document.getElementById("answer4");
+let question4 = document.getElementById("question4");
+
+let answer5 = document.getElementById("answer5");
+let question5 = document.getElementById("question5");
+
+let answer6 = document.getElementById("answer6");
+let question6 = document.getElementById("question6");
+
+let answer7 = document.getElementById("answer7");
+let question7 = document.getElementById("question7");
+
+let answer8 = document.getElementById("answer8");
+let question8 = document.getElementById("question8");
+
+let answer9 = document.getElementById("answer9");
+let question9 = document.getElementById("question9");
+
+let answer10 = document.getElementById("answer10");
+let question10 = document.getElementById("question10");
+
 
 let back = document.getElementById("back");
 let next = document.getElementById("next");
@@ -15,31 +43,33 @@ let card8 = document.getElementById("card8");
 let card9 = document.getElementById("card9");
 let card10 = document.getElementById("card10");
 
+
+// flip code below 
 document.getElementById("flip").addEventListener('click', flip)
 
 function flip() {
-
-    if (answer.style.display === "none" ) {
-        question.style.display="none";
-        answer.style.display="flex";
-    }
-    else {
-        question.style.display="flex";
-        answer.style.display="none";
-    }
-
-    //toggle
-
-    // question.classList.add("show");
-    // answer.classList.add("hide");
-
-    // question.classList.toggle("hide");
-    // question.classList.toggle("show");
-
-    // answer.classList.toggle("show");
-    // answer.classList.toggle("hide");
+  if (getComputedStyle(answer1).display === "none") {
+    question1.style.display = "none";
+    answer1.style.display = "flex";
+  } 
+  else if (getComputedStyle(answer1).display === "flex") {
+    question1.style.display = "flex";
+    answer1.style.display = "none";
+  }
+  else if (getComputedStyle(answer2).display === "none") {
+    question2.style.display = "none";
+    answer2.style.display = "flex";
+  } 
+  else if (getComputedStyle(answer2).display === "flex") {
+    question2.style.display = "flex";
+    answer2.style.display = "none";
+  }
 }
 
+
+
+
+// back and next button code below
 
 back.addEventListener("click", () => {
   if (getComputedStyle(card1).display === "flex") {
