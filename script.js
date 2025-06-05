@@ -43,28 +43,14 @@ let card8 = document.getElementById("card8");
 let card9 = document.getElementById("card9");
 let card10 = document.getElementById("card10");
 
+let stage = document.getElementById("stage");
+
 
 // flip code below 
 document.getElementById("flip").addEventListener('click', flip)
 
-function flip() {
-  if (getComputedStyle(answer1).display === "none") {
-    question1.style.display = "none";
-    answer1.style.display = "flex";
-  } 
-  else if (getComputedStyle(answer1).display === "flex") {
-    question1.style.display = "flex";
-    answer1.style.display = "none";
-  }
-  else if (getComputedStyle(answer2).display === "none") {
-    question2.style.display = "none";
-    answer2.style.display = "flex";
-  } 
-  else if (getComputedStyle(answer2).display === "flex") {
-    question2.style.display = "flex";
-    answer2.style.display = "none";
-  }
-}
+
+
 
 
 
@@ -75,42 +61,53 @@ back.addEventListener("click", () => {
   if (getComputedStyle(card1).display === "flex") {
     card1.style.display = "none";
     card10.style.display = "flex";
+    stage.innerHTML = 10;
+
   }
   else if (getComputedStyle(card2).display === "flex") {
     card1.style.display = "flex";
     card2.style.display = "none";
+    stage.innerHTML = 1;
   }
   else if (getComputedStyle(card3).display === "flex") {
     card2.style.display = "flex";
     card3.style.display = "none";
+    stage.innerHTML = 2;
   }
   else if (getComputedStyle(card4).display === "flex") {
     card3.style.display = "flex";
     card4.style.display = "none";
+    stage.innerHTML = 3;
   }
   else if (getComputedStyle(card5).display === "flex") {
     card4.style.display = "flex";
     card5.style.display = "none";
+    stage.innerHTML = 4;
   }
   else if (getComputedStyle(card6).display === "flex") {
     card5.style.display = "flex";
     card6.style.display = "none";
+    stage.innerHTML = 5;
   }
   else if (getComputedStyle(card7).display === "flex") {
     card6.style.display = "flex";
     card7.style.display = "none";
+    stage.innerHTML = 6;
   }
   else if (getComputedStyle(card8).display === "flex") {
     card7.style.display = "flex";
     card8.style.display = "none";
+    stage.innerHTML = 7;
   }
   else if (getComputedStyle(card9).display === "flex") {
     card8.style.display = "flex";
     card9.style.display = "none";
+    stage.innerHTML = 8;
   }
   else if (getComputedStyle(card10).display === "flex") {
     card9.style.display = "flex";
     card10.style.display = "none";
+    stage.innerHTML = 9;
   }
 });
 
@@ -118,41 +115,51 @@ next.addEventListener("click", () => {
   if (getComputedStyle(card1).display === "flex") {
     card1.style.display = "none";
     card2.style.display = "flex";
+    stage.innerHTML = 2;
   }
   else if (getComputedStyle(card2).display === "flex") {
     card2.style.display = "none";
     card3.style.display = "flex";
+    stage.innerHTML = 3;
   }
   else if (getComputedStyle(card3).display === "flex") {
     card3.style.display = "none";
     card4.style.display = "flex";
+    stage.innerHTML = 4;
   }
   else if (getComputedStyle(card4).display === "flex") {
     card4.style.display = "none";
     card5.style.display = "flex";
+    stage.innerHTML = 5
   }
   else if (getComputedStyle(card5).display === "flex") {
     card5.style.display = "none";
     card6.style.display = "flex";
+    stage.innerHTML = 6;
   }
   else if (getComputedStyle(card6).display === "flex") {
     card6.style.display = "none";
     card7.style.display = "flex";
+    stage.innerHTML = 7;
   }
   else if (getComputedStyle(card7).display === "flex") {
     card7.style.display = "none";
     card8.style.display = "flex";
+    stage.innerHTML = 8;
   }
   else if (getComputedStyle(card8).display === "flex") {
     card8.style.display = "none";
     card9.style.display = "flex";
+    stage.innerHTML = 9;
   }
   else if (getComputedStyle(card9).display === "flex") {
     card9.style.display = "none";
     card10.style.display = "flex";
+    stage.innerHTML = 10;
   }
   else if (getComputedStyle(card10).display === "flex") {
     card10.style.display = "none";
     card1.style.display = "flex";
+    stage.innerHTML = 1;
   }
 });
