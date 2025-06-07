@@ -8,4 +8,4 @@ wanna add question or answer? just access html and change it, easy!. <br>
 or later i will add features changing question and answer
 
 # preview 
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/5c7d6248-0954-4bbf-873f-050ae3bbe436)
