@@ -8,4 +8,4 @@ wanna add question or answer? just access html and change it, easy!. <br>
 or later i will add features changing question and answer
 
 # preview 
-![alt text](image.png)
+![alt text](image-1.png)
