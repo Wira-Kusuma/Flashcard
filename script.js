@@ -47,10 +47,111 @@ let stage = document.getElementById("stage");
 
 
 // flip code below 
-document.getElementById("flip").addEventListener('click', flip)
+question1.addEventListener('click', swichA1);
+question2.addEventListener('click', swichA2);
+question3.addEventListener('click', swichA3);
+question4.addEventListener('click', swichA4);
+question5.addEventListener('click', swichA5);
+question6.addEventListener('click', swichA6);
+question7.addEventListener('click', swichA7);
+question8.addEventListener('click', swichA8);
+question9.addEventListener('click', swichA9);
+question10.addEventListener('click', swichA10);
+
+answer1.addEventListener('click', swichQ1);
+answer2.addEventListener('click', swichQ2);
+answer3.addEventListener('click', swichQ3);
+answer4.addEventListener('click', swichQ4);
+answer5.addEventListener('click', swichQ5);
+answer6.addEventListener('click', swichQ6);
+answer7.addEventListener('click', swichQ7);
+answer8.addEventListener('click', swichQ8);
+answer9.addEventListener('click', swichQ9);
+answer10.addEventListener('click', swichQ10);
 
 
+function swichA1() {
+  question1.style.display="none";
+  answer1.style.display="flex";
+}
+function swichA2() {
+  question2.style.display="none";
+  answer2.style.display="flex";
+}
+function swichA3() {
+  question3.style.display="none";
+  answer3.style.display="flex";
+}
+function swichA4() {
+  question4.style.display="none";
+  answer4.style.display="flex";
+}
+function swichA5() {
+  question5.style.display="none";
+  answer5.style.display="flex";
+}
+function swichA6() {
+  question6.style.display="none";
+  answer6.style.display="flex";
+}
+function swichA7() {
+  question7.style.display="none";
+  answer7.style.display="flex";
+}
+function swichA8() {
+  question8.style.display="none";
+  answer8.style.display="flex";
+}
+function swichA9() {
+  question9.style.display="none";
+  answer9.style.display="flex";
+}
+function swichA10() {
+  question1.style.display="none";
+  answer1.style.display="flex";
+}
 
+
+function swichQ1() {
+  question1.style.display="flex";
+  answer1.style.display="none";
+}
+function swichQ2() {
+  question2.style.display="flex";
+  answer2.style.display="none";
+}
+function swichQ3() {
+  question3.style.display="flex";
+  answer3.style.display="none";
+}
+function swichQ4() {
+  question4.style.display="flex";
+  answer4.style.display="none";
+}
+function swichQ5() {
+  question5.style.display="flex";
+  answer5.style.display="none";
+}
+function swichQ6() {
+  question6.style.display="flex";
+  answer6.style.display="none";
+}
+function swichQ7() {
+  question7.style.display="flex";
+  answer7.style.display="none";
+}
+function swichQ8() {
+  question8.style.display="flex";
+  answer8.style.display="none";
+}
+function swichQ9() {
+  question9.style.display="flex";
+  answer9.style.display="none";
+}
+function swichQ10() {
+  question10.style.display="flex";
+  answer10.style.display="none";
+}
 
 
 
