@@ -13,6 +13,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     user-select: none;
@@ -39,6 +40,7 @@ body, html {
     height: 50px;
     /* border: 1px solid; */
     padding: 10px;
+    transition: ease-in-out 0.3s;
 }
 
 .middle {
@@ -50,6 +52,7 @@ body, html {
     border: 1px solid;
     padding: 10px;
     border-radius: 10px;
+    transition: ease-in-out 0.3s;
 }
 
 .bottom {
@@ -61,6 +64,7 @@ body, html {
     height: 50px;
     /* border: 1px solid; */
     padding: 10px;
+    transition: ease-in-out 0.3s;
 }
 
 p {
@@ -73,6 +77,14 @@ p {
     border-radius: 10px;
     padding: 20px;
     font-size: 18px;
+    transition: ease-in-out 0.3s;
+}
+
+p:hover,.middle:hover {
+    background-color: whitesmoke;
+}
+p:active{
+    background-color: darkgray;
 }
 
 @media screen and (max-width:700px){
@@ -93,6 +105,11 @@ p {
 @media screen and (max-width:400px){
     .top,.middle,.bottom {
         width: 300px;
+    }
+}
+@media screen and (max-width:300px){
+    .top,.middle,.bottom {
+        width: 240px;
     }
 }
 
