@@ -53,6 +53,7 @@ body, html {
     padding: 10px;
     border-radius: 10px;
     transition: ease-in-out 0.3s;
+    cursor: pointer;
 }
 
 .bottom {
@@ -78,6 +79,7 @@ p {
     padding: 20px;
     font-size: 18px;
     transition: ease-in-out 0.3s;
+    cursor: pointer;
 }
 
 p:hover,.middle:hover {
