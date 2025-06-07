@@ -107,8 +107,8 @@ function swichA9() {
   answer9.style.display="flex";
 }
 function swichA10() {
-  question1.style.display="none";
-  answer1.style.display="flex";
+  question10.style.display="none";
+  answer10.style.display="flex";
 }
 
 
