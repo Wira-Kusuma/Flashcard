@@ -115,16 +115,24 @@ p:active{
     }
 }
 
-#answer1 {display: none;}
-#answer2 {display: none;}
-#answer3 {display: none;}
-#answer4 {display: none;}
-#answer5 {display: none;}
-#answer6 {display: none;}
-#answer7 {display: none;}
-#answer8 {display: none;}
-#answer9 {display: none;}
-#answer10 {display: none;}
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+#answer1, #answer2, #answer3, #answer4, #answer5,
+#answer6, #answer7, #answer8, #answer9, #answer10 {
+  display: none;
+}
+
+/* Tambahkan selector lebih spesifik */
+#answer1.show, #answer2.show, #answer3.show, #answer4.show, #answer5.show,
+#answer6.show, #answer7.show, #answer8.show, #answer9.show, #answer10.show {
+  display: flex;
+}
 
 #card1 {display: flex;}
 #card2 {display: none;}
