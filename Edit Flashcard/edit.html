@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Flashcard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="../img/flash-cards.png" type="image/x-icon">
+  </head>
+  <body>
+    <h2>Edit Data</h2>
+    <input type="text" id="myInput" placeholder="Tulis sesuatu..." />
+    <button id="saveBtn">Simpan</button>
+    <p><a href="output.html">Lihat hasil di halaman lain</a></p>
+
+    <script>
+      document.getElementById("saveBtn").onclick = function () {
+        const input = document.getElementById("myInput").value;
+        localStorage.setItem("myData", input);
+        alert("Data disimpan!");
+      };
+    </script>
+  </body>
+</html>

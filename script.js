@@ -173,3 +173,8 @@ next.addEventListener("click", () => {
     stage.innerHTML = 1;
   }
 });
+
+
+// take localStorage
+const data = localStorage.getItem('myData');
+    document.getElementById('showData').textContent = data ? data : 'Belum ada data';
