@@ -126,6 +126,12 @@ p:active{
 #answer1, #answer2, #answer3, #answer4, #answer5,
 #answer6, #answer7, #answer8, #answer9, #answer10 {
   display: none;
+background-color: rgba(255, 0, 0, 0.2);
+}
+
+#question1, #question2, #question3, #question4, #question5,
+#question6, #question7, #question8, #question9, #question10 {
+    background-color: rgba(0, 123, 255, 0.2);
 }
 
 /* Tambahkan selector lebih spesifik */
