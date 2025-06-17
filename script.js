@@ -180,3 +180,24 @@ function changeToEdit() {
   document.getElementById("mainContent").style.display="none";
   document.getElementById("editCard").style.display="flex";
 }
+
+function saveEditCard() {
+  /** @type {HTMLInputElement} */
+  const eq = [];
+  for (let i = 1; i <= 10; i++) {
+    eq[i] = document.getElementById(`eq${i}`).value;
+
+    document.getElementById(`question${i}`).innerText = eq[i];
+  }
+  const ea = [];
+  for (let i = 1; i <= 10; i++) {
+    ea[i] = document.getElementById(`ea${i}`).value;
+
+    document.getElementById(`answer${i}`).innerText = ea[i];
+  }
+
+  document.getElementById("mainContent").style.display="flex";
+  document.getElementById("editCard").style.display="none";
+
+}
+
