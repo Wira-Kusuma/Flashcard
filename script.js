@@ -187,13 +187,13 @@ function saveEditCard() {
   for (let i = 1; i <= 10; i++) {
     eq[i] = document.getElementById(`eq${i}`).value;
 
-    document.getElementById(`question${i}`).innerText = eq[i];
+    document.getElementById(`q${i}`).innerText = eq[i];
   }
   const ea = [];
   for (let i = 1; i <= 10; i++) {
     ea[i] = document.getElementById(`ea${i}`).value;
 
-    document.getElementById(`answer${i}`).innerText = ea[i];
+    document.getElementById(`a${i}`).innerText = ea[i];
   }
 
   document.getElementById("mainContent").style.display="flex";
