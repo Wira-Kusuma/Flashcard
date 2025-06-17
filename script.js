@@ -176,10 +176,10 @@ function saveEditCard() {
 // to clear all value in text area
 function clearEditCard() {
   for (let i = 1; i <= 10; i++) {
-    document.getElementById(`eq${i}`).value="";
+    document.getElementById(`eq${i}`).value=`question${i}`;
   }
   for (let i = 1; i <= 10; i++) {
-    document.getElementById(`ea${i}`).value="";
+    document.getElementById(`ea${i}`).value=`answer${i}`;
   }
 }
 
