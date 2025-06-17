@@ -173,6 +173,11 @@ function saveEditCard() {
   document.getElementById("editCard").style.display = "none";
 }
 
+function closeEditCard() {
+  document.getElementById("mainContent").style.display = "flex";
+  document.getElementById("editCard").style.display = "none";
+}
+
 // to clear all value in text area
 function clearEditCard() {
   for (let i = 1; i <= 10; i++) {
