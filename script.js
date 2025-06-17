@@ -173,3 +173,10 @@ next.addEventListener("click", () => {
     stage.innerHTML = 1;
   }
 });
+
+// edit flashcard 
+
+function changeToEdit() {
+  document.getElementById("mainContent").style.display="none";
+  document.getElementById("editCard").style.display="flex";
+}

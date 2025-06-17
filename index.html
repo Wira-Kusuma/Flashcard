@@ -11,10 +11,11 @@
 </head>
 <body>
     
-    <div class="parent">
+    <!-- card element with all button -->
+    <div class="parent" id="mainContent">
         
         <div class="top">
-            <p><span id="stage">1</span>/10</p>
+            <button><span id="stage">1</span>/10</button>
             <h5 style="text-align: center;">Click the card to flip the card</h5>
         </div>
 
@@ -111,26 +112,54 @@
         </div>
 
         <div class="bottom">
-            <p id="back">back</p>
-            <span style="color: blue; font-weight: bold;">Question</span>
-            <span style="color: red; font-weight: bold;">Answer</span>
-            <p id="next">next</p>
+            <button id="back">back</button>
+            
+            <button onclick="changeToEdit()">Edit</button>
+            
+            <button id="next">next</button>
         </div>
     </div>
 
 
+
+    <div class="editCard" id="editCard">
+        <h3>Card 1</h3>
+        <textarea id="" placeholder="Question"></textarea>
+        <textarea id="" placeholder="Answer"></textarea>
+        <h3>Card 2</h3>
+        <textarea id="" placeholder="Question"></textarea>
+        <textarea id="" placeholder="Answer"></textarea>
+        <h3>Card 3</h3>
+        <textarea id="" placeholder="Question"></textarea>
+        <textarea id="" placeholder="Answer"></textarea>
+        <h3>Card 4</h3>
+        <textarea id="" placeholder="Question"></textarea>
+        <textarea id="" placeholder="Answer"></textarea>
+        <h3>Card 5</h3>
+        <textarea id="" placeholder="Question"></textarea>
+        <textarea id="" placeholder="Answer"></textarea>
+        <h3>Card 6</h3>
+        <textarea id="" placeholder="Question"></textarea>
+        <textarea id="" placeholder="Answer"></textarea>
+        <h3>Card 7</h3>
+        <textarea id="" placeholder="Question"></textarea>
+        <textarea id="" placeholder="Answer"></textarea>
+        <h3>Card 8</h3>
+        <textarea id="" placeholder="Question"></textarea>
+        <textarea id="" placeholder="Answer"></textarea>
+        <h3>Card 9</h3>
+        <textarea id="" placeholder="Question"></textarea>
+        <textarea id="" placeholder="Answer"></textarea>
+        <h3>Card 10</h3>
+        <textarea id="" placeholder="Question"></textarea>
+        <textarea id="" placeholder="Answer"></textarea>
+
+        <button>Save</button>
+    </div>
+
+
     <footer>
-        <h5 style="text-align: center;">
-            © all rights reserved 2025 <br> <hr>
-
-            Make with Seriously by wira <br>
-
-            <a href="https://github.com/Wira-Kusuma/Flashcard" target="_blank">Github</a> <br>
-            
-            <hr>
-
-            Give⭐if you like it
-        </h5>
+        <p style="text-align:center; font-size: 0.9em; color: #888;">&copy; 2024 Flashcard App. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
