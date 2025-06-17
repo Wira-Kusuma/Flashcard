@@ -1,50 +1,7 @@
-let answer1 = document.getElementById("answer1");
-let question1 = document.getElementById("question1");
-
-let answer2 = document.getElementById("answer2");
-let question2 = document.getElementById("question2");
-
-let answer3 = document.getElementById("answer3");
-let question3 = document.getElementById("question3");
-
-let answer4 = document.getElementById("answer4");
-let question4 = document.getElementById("question4");
-
-let answer5 = document.getElementById("answer5");
-let question5 = document.getElementById("question5");
-
-let answer6 = document.getElementById("answer6");
-let question6 = document.getElementById("question6");
-
-let answer7 = document.getElementById("answer7");
-let question7 = document.getElementById("question7");
-
-let answer8 = document.getElementById("answer8");
-let question8 = document.getElementById("question8");
-
-let answer9 = document.getElementById("answer9");
-let question9 = document.getElementById("question9");
-
-let answer10 = document.getElementById("answer10");
-let question10 = document.getElementById("question10");
-
-
 let back = document.getElementById("back");
 let next = document.getElementById("next");
 
-let card1 = document.getElementById("card1");
-let card2 = document.getElementById("card2");
-let card3 = document.getElementById("card3");
-let card4 = document.getElementById("card4");
-let card5 = document.getElementById("card5");
-let card6 = document.getElementById("card6");
-let card7 = document.getElementById("card7");
-let card8 = document.getElementById("card8");
-let card9 = document.getElementById("card9");
-let card10 = document.getElementById("card10");
-
 let stage = document.getElementById("stage");
-
 
 // flip code below 
 const totalCards = 10; // Total cards
@@ -66,6 +23,18 @@ for (let i = 1; i <= totalCards; i++) {
 
 
 // back and next button code below
+
+let card1 = document.getElementById("card1");
+let card2 = document.getElementById("card2");
+let card3 = document.getElementById("card3");
+let card4 = document.getElementById("card4");
+let card5 = document.getElementById("card5");
+let card6 = document.getElementById("card6");
+let card7 = document.getElementById("card7");
+let card8 = document.getElementById("card8");
+let card9 = document.getElementById("card9");
+let card10 = document.getElementById("card10");
+
 
 back.addEventListener("click", () => {
   if (getComputedStyle(card1).display === "flex") {
@@ -173,3 +142,49 @@ next.addEventListener("click", () => {
     stage.innerHTML = 1;
   }
 });
+
+// edit flashcard 
+
+// when click this code run and change display to edit
+function changeToEdit() {
+  document.getElementById("mainContent").style.display="none";
+  document.getElementById("editCard").style.display="flex";
+}
+
+// to send input from text area to flashcard
+function saveEditCard() {
+
+  const eq = [];
+  for (let i = 1; i <= 10; i++) {
+    eq[i] = document.getElementById(`eq${i}`).value;
+
+    document.getElementById(`q${i}`).innerText = eq[i];
+  }
+
+  const ea = [];
+  for (let i = 1; i <= 10; i++) {
+    ea[i] = document.getElementById(`ea${i}`).value;
+
+    document.getElementById(`a${i}`).innerText = ea[i];
+  }
+
+  document.getElementById("mainContent").style.display="flex";
+  document.getElementById("editCard").style.display="none";
+
+}
+// close edit card and go to flashcard
+function closeEditCard() {
+  document.getElementById("mainContent").style.display="flex";
+  document.getElementById("editCard").style.display="none";
+}
+
+
+// to clear all value in text area
+function clearEditCard() {
+  for (let i = 1; i <= 10; i++) {
+    document.getElementById(`eq${i}`).value="";
+  }
+  for (let i = 1; i <= 10; i++) {
+    document.getElementById(`ea${i}`).value="";
+  }
+}

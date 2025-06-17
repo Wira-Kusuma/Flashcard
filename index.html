@@ -11,126 +11,169 @@
 </head>
 <body>
     
-    <div class="parent">
+    <!-- card element with all button -->
+    <div class="parent" id="mainContent">
         
         <div class="top">
-            <p><span id="stage">1</span>/10</p>
-            <h5 style="text-align: center;">Click the card to flip the card</h5>
+            <button><span id="stage">1</span>/10</button>
+            <div>
+                <p style="color: blue;">Question</p>
+                <p style="color: red;">answer</p>
+            </div>
         </div>
 
 
         <!-- card1 -->
         <div id="card1">
             <div class="middle" id="question1">
-                <h3>Question1</h3>
+            <h3 id="q1">Question1</h3>
             </div>
             <div class="middle" id="answer1">
-                <h3>Answer1</h3>
+            <h3 id="a1">Answer1</h3>
             </div>
         </div>
         <!-- card2 -->
         <div id="card2">
             <div class="middle" id="question2">
-                <h3>Question2</h3>
+            <h3 id="q2">Question2</h3>
             </div>
             <div class="middle" id="answer2">
-                <h3>Answer2</h3>
+            <h3 id="a2">Answer2</h3>
             </div>
         </div>
         <!-- card3 -->
         <div id="card3">
             <div class="middle" id="question3">
-                <h3>Question3</h3>
+            <h3 id="q3">Question3</h3>
             </div>
             <div class="middle" id="answer3">
-                <h3>Answer3</h3>
+            <h3 id="a3">Answer3</h3>
             </div>
         </div>
         <!-- card4 -->
         <div id="card4">
             <div class="middle" id="question4">
-                <h3>Question4</h3>
+            <h3 id="q4">Question4</h3>
             </div>
             <div class="middle" id="answer4">
-                <h3>Answer4</h3>
+            <h3 id="a4">Answer4</h3>
             </div>
         </div>
         <!-- card5 -->
         <div id="card5">
             <div class="middle" id="question5">
-                <h3>Question5</h3>
+            <h3 id="q5">Question5</h3>
             </div>
             <div class="middle" id="answer5">
-                <h3>Answer5</h3>
+            <h3 id="a5">Answer5</h3>
             </div>
         </div>
         <!-- card6 -->
         <div id="card6">
             <div class="middle" id="question6">
-                <h3>Question6</h3>
+            <h3 id="q6">Question6</h3>
             </div>
             <div class="middle" id="answer6">
-                <h3>Answer6</h3>
+            <h3 id="a6">Answer6</h3>
             </div>
         </div>
         <!-- card7 -->
         <div id="card7">
             <div class="middle" id="question7">
-                <h3>Question7</h3>
+            <h3 id="q7">Question7</h3>
             </div>
             <div class="middle" id="answer7">
-                <h3>Answer7</h3>
+            <h3 id="a7">Answer7</h3>
             </div>
         </div>
         <!-- card8 -->
         <div id="card8">
             <div class="middle" id="question8">
-                <h3>Question8</h3>
+            <h3 id="q8">Question8</h3>
             </div>
             <div class="middle" id="answer8">
-                <h3>Answer8</h3>
+            <h3 id="a8">Answer8</h3>
             </div>
         </div>
         <!-- card9 -->
         <div id="card9">
             <div class="middle" id="question9">
-                <h3>Question9</h3>
+            <h3 id="q9">Question9</h3>
             </div>
             <div class="middle" id="answer9">
-                <h3>Answer9</h3>
+            <h3 id="a9">Answer9</h3>
             </div>
         </div>
         <!-- card10 -->
         <div id="card10">
             <div class="middle" id="question10">
-                <h3>Question10</h3>
+            <h3 id="q10">Question10</h3>
             </div>
             <div class="middle" id="answer10">
-                <h3>Answer10</h3>
+            <h3 id="a10">Answer10</h3>
             </div>
         </div>
 
         <div class="bottom">
-            <p id="back">back</p>
-            <span style="color: blue; font-weight: bold;">Question</span>
-            <span style="color: red; font-weight: bold;">Answer</span>
-            <p id="next">next</p>
+            <button id="back">back</button>
+            
+            <button onclick="changeToEdit()">Edit</button>
+            
+            <button id="next">next</button>
         </div>
     </div>
 
 
+
+    <div class="editCard" id="editCard">
+        <h3>Card 1</h3>
+        <textarea id="eq1" placeholder="Question"></textarea>
+        <textarea id="ea1" placeholder="Answer"></textarea>
+
+        <h3>Card 2</h3>
+        <textarea id="eq2" placeholder="Question"></textarea>
+        <textarea id="ea2" placeholder="Answer"></textarea>
+
+        <h3>Card 3</h3>
+        <textarea id="eq3" placeholder="Question"></textarea>
+        <textarea id="ea3" placeholder="Answer"></textarea>
+
+        <h3>Card 4</h3>
+        <textarea id="eq4" placeholder="Question"></textarea>
+        <textarea id="ea4" placeholder="Answer"></textarea>
+
+        <h3>Card 5</h3>
+        <textarea id="eq5" placeholder="Question"></textarea>
+        <textarea id="ea5" placeholder="Answer"></textarea>
+
+        <h3>Card 6</h3>
+        <textarea id="eq6" placeholder="Question"></textarea>
+        <textarea id="ea6" placeholder="Answer"></textarea>
+
+        <h3>Card 7</h3>
+        <textarea id="eq7" placeholder="Question"></textarea>
+        <textarea id="ea7" placeholder="Answer"></textarea>
+
+        <h3>Card 8</h3>
+        <textarea id="eq8" placeholder="Question"></textarea>
+        <textarea id="ea8" placeholder="Answer"></textarea>
+
+        <h3>Card 9</h3>
+        <textarea id="eq9" placeholder="Question"></textarea>
+        <textarea id="ea9" placeholder="Answer"></textarea>
+
+        <h3>Card 10</h3>
+        <textarea id="eq10" placeholder="Question"></textarea>
+        <textarea id="ea10" placeholder="Answer"></textarea>
+
+        <button onclick="saveEditCard()">Save</button>
+        <button onclick="closeEditCard()">Close</button>
+        <button onclick="clearEditCard()">Clear all</button>
+    </div>
+
+
     <footer>
-        <h5 style="text-align: center;">
-            © all rights reserved 2025 <br> <hr>
-
-            Make with Seriously by wira <br>
-
-            <a href="https://github.com/Wira-Kusuma/Flashcard" target="_blank">Github</a> <br>
-            
-            <hr>
-
-            Give⭐if you like it
-        </h5>
+        <p style="text-align:center; font-size: 0.9em; color: #888;">&copy; 2025 Flashcard App. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
