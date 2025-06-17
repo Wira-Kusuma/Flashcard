@@ -16,7 +16,10 @@
         
         <div class="top">
             <button><span id="stage">1</span>/10</button>
-            <h5 style="text-align: center;">Click the card to flip the card</h5>
+            <div>
+                <p style="color: blue;">Question</p>
+                <p style="color: red;">answer</p>
+            </div>
         </div>
 
 
@@ -164,11 +167,13 @@
         <textarea id="ea10" placeholder="Answer"></textarea>
 
         <button onclick="saveEditCard()">Save</button>
+        <button onclick="closeEditCard()">Close</button>
+        <button onclick="clearEditCard()">Clear all</button>
     </div>
 
 
     <footer>
-        <p style="text-align:center; font-size: 0.9em; color: #888;">&copy; 2024 Flashcard App. All rights reserved.</p>
+        <p style="text-align:center; font-size: 0.9em; color: #888;">&copy; 2025 Flashcard App. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>

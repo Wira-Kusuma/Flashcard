@@ -1,10 +1,3 @@
-let questions = [];
-let answers = [];
-for (let i = 1; i <= 10; i++) {
-  questions[i] = document.getElementById(`question${i}`);
-  answers[i] = document.getElementById(`answer${i}`);
-}
-
 let back = document.getElementById("back");
 let next = document.getElementById("next");
 
@@ -152,19 +145,22 @@ next.addEventListener("click", () => {
 
 // edit flashcard 
 
+// when click this code run and change display to edit
 function changeToEdit() {
   document.getElementById("mainContent").style.display="none";
   document.getElementById("editCard").style.display="flex";
 }
 
+// to send input from text area to flashcard
 function saveEditCard() {
-  /** @type {HTMLInputElement} */
+
   const eq = [];
   for (let i = 1; i <= 10; i++) {
     eq[i] = document.getElementById(`eq${i}`).value;
 
     document.getElementById(`q${i}`).innerText = eq[i];
   }
+
   const ea = [];
   for (let i = 1; i <= 10; i++) {
     ea[i] = document.getElementById(`ea${i}`).value;
@@ -176,4 +172,19 @@ function saveEditCard() {
   document.getElementById("editCard").style.display="none";
 
 }
+// close edit card and go to flashcard
+function closeEditCard() {
+  document.getElementById("mainContent").style.display="flex";
+  document.getElementById("editCard").style.display="none";
+}
 
+
+// to clear all value in text area
+function clearEditCard() {
+  for (let i = 1; i <= 10; i++) {
+    document.getElementById(`eq${i}`).value="";
+  }
+  for (let i = 1; i <= 10; i++) {
+    document.getElementById(`ea${i}`).value="";
+  }
+}
