@@ -153,31 +153,25 @@ function changeToEdit() {
 
 // to send input from text area to flashcard
 function saveEditCard() {
-
   const eq = [];
   for (let i = 1; i <= 10; i++) {
     eq[i] = document.getElementById(`eq${i}`).value;
-
     document.getElementById(`q${i}`).innerText = eq[i];
   }
 
   const ea = [];
   for (let i = 1; i <= 10; i++) {
     ea[i] = document.getElementById(`ea${i}`).value;
-
     document.getElementById(`a${i}`).innerText = ea[i];
   }
 
-  document.getElementById("mainContent").style.display="flex";
-  document.getElementById("editCard").style.display="none";
+  // save to localStorage
+  localStorage.setItem("eq", JSON.stringify(eq));
+  localStorage.setItem("ea", JSON.stringify(ea));
 
+  document.getElementById("mainContent").style.display = "flex";
+  document.getElementById("editCard").style.display = "none";
 }
-// close edit card and go to flashcard
-function closeEditCard() {
-  document.getElementById("mainContent").style.display="flex";
-  document.getElementById("editCard").style.display="none";
-}
-
 
 // to clear all value in text area
 function clearEditCard() {
@@ -188,3 +182,23 @@ function clearEditCard() {
     document.getElementById(`ea${i}`).value="";
   }
 }
+
+function loadEditCard() {
+  // take data from localstorage
+  const eq = JSON.parse(localStorage.getItem("eq") || "[]");
+  const ea = JSON.parse(localStorage.getItem("ea") || "[]");
+
+  for (let i = 1; i <= 10; i++) {
+    if (eq[i] !== undefined) {
+      document.getElementById(`eq${i}`).value = eq[i];
+      document.getElementById(`q${i}`).innerText = eq[i];
+    }
+    if (ea[i] !== undefined) {
+      document.getElementById(`ea${i}`).value = ea[i];
+      document.getElementById(`a${i}`).innerText = ea[i];
+    }
+  }
+}
+
+// run when open
+window.onload = loadEditCard;
