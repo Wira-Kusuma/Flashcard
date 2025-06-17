@@ -181,10 +181,10 @@ function closeEditCard() {
 // to clear all value in text area
 function clearEditCard() {
   for (let i = 1; i <= 10; i++) {
-    document.getElementById(`eq${i}`).value=`question${i}`;
+    document.getElementById(`eq${i}`).value="";
   }
   for (let i = 1; i <= 10; i++) {
-    document.getElementById(`ea${i}`).value=`answer${i}`;
+    document.getElementById(`ea${i}`).value="";
   }
 }
 
